@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    .textbox {
+      width: 60%;
+      /* height: 100%; */
+      border: 2px solid #04BB97;
+      background-color: #ffffff;
+      font-size: 18px;
+      /* font-family: 'Courier New', Courier, monospace; */
+      color: #000000;
+      resize: none;
+
+      margin: auto;
+      /* border: 3px solid green; */
+      padding: 10px;
+    }
+
+    .button {
+      /* defines button class */
+      background-color: #04BB6D;
+      /* gets modified later */
+      /* Green */
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      /* margin: 4px 2px; */
+      transition-duration: 0.4s;
+      cursor: pointer;
+      float: left;
+    }
+
+    .button1 {
+      /* defines button button state 1 */
+      background-color: white;
+      color: black;
+      border-top: 2px solid #04BB97;
+      border-bottom: 2px solid #04BB97;
+      /* border: 2px solid #04AA6D; */
+    }
+
+    .button1:hover {
+      /* defines button button state 2 */
+      background-color: #04BB97;
+      color: white;
+      /* check later */
+    }
+
+    .center {
+      margin: auto;
+      width: 60%;
+      /* border: 3px solid green; */
+      padding: 13px;
+    }
+
+    /* this is all for the slideshow */
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      max-height: 500px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: auto;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!--<p id="output"></p>  This should display javascript 
+  Hello world <br> Here is some text-->
+
+  <!-- buttons! defined individually -->
+  <div class="center">
+    <a href="index.html"><img src="MAS-Logo-fpr-website.png" alt="Logo"></a>
+    <br>
+    <a href="index.html">
+      <button class="button button1">Home</button>
+    </a>
+    <a href="getinvolved.html">
+      <button class="button button1">Get Involved</button>
+    </a>
+    <a href="getinvolved.html">
+      <button class="button button1">Conservation</button>
+    </a>
+    <a href="getinvolved.html">
+      <button class="button button1">Education</button>
+    </a>
+    <a href="getinvolved.html">
+      <button class="button button1">Research</button>
+    </a>
+    <a href="getinvolved.html">
+      <button class="button button1">About</button>
+    </a>
+    <a href="getinvolved.html">
+      <button class="button button1">Contact Us</button>
+    </a>
+
+  </div>
+
+  <div> <br> <br> <br> <br> </div>
+  <!-- Moves 2 lines down from center of buttons and 2 lines further -->
+
+  <div class="textbox">
+    <!-- this is a slightly lazy way to make them align, I should technically make a new container with the correct functionalities -->
+    Welcome to Michigan Birdwatching, your go-to resource for exploring the rich birdlife of the Great Lakes State.
+    Whether you're a seasoned birder or just starting out, Michigan offers a variety of stunning habitats, from the
+    dense forests of the Upper Peninsula to the serene wetlands of the lower state. Discover the beauty of over 450 bird
+    species that call Michigan home throughout the year.
+    <br> <br>
+    Join us as we guide you to some of Michigan’s best birdwatching spots, from the shores of Lake Huron to the
+    breathtaking wilderness of Isle Royale. Learn about migratory patterns, seasonal highlights, and local hotspots
+    where you can witness everything from vibrant warblers to majestic bald eagles. With our detailed maps and birding
+    tips, you'll be ready for an unforgettable outdoor adventure.
+    <br> <br>
+    At Michigan Birdwatching, we believe in fostering a deep connection with nature through birding. Stay updated with
+    our events, workshops, and birdwatching tours led by experts. Whether you're looking for quiet moments in nature or
+    to connect with a passionate birdwatching community, we’re here to help you take flight on your birding journey.
+  </div>
+
+  <br> <br>
+
+
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="bluepurple-photo3.png" style="width:100%; height:100%;">
+      <div class="text">The bird of the day: The Spangled Cotinga</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="smallblue-photo2.png" style="width:100%; height:100%;">
+      <div class="text">The Michigan native Black-throated Blue Warbler</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="blackyellow-photo3.png" style="width:100%; height:100%;">
+      <div class="text">A Great Tit wearing blue and maize</div>
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  <script src="script.js"></script>
+
+  <br> <br>
+
+  <!--
+  Calendar:
+  <div class="textbox">
+    <iframe
+      src="https://calendar.google.com/calendar/embed?src=en.usa%23holiday%40group.v.calendar.google.com&ctz=America%2FNew_York"
+      style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+  </div>
+  -->
+
+</body>
+
+</html>
